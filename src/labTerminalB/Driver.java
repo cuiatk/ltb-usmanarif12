@@ -18,15 +18,20 @@ public class Driver {
 		
 		Movie m1 = new Movie("Spancer", 0);
 		Movie m2 = new Movie("Speed", 1);
-		Movie m3 = new Movie("Blood Diamond",2);
+		//Movie m3 = new Movie("Blood Diamond",2);
+		Movie m3 = new Movie("Avengers",1);
+		Movie m4=new Movie("Iron man",2);
 		Customer me = new Customer("Nadir");
 		Customer me2 = new Customer("Allah Ditta");
 		Rental r1 = new Rental(m1, 23);
 		Rental r2 = new Rental(m2,4);
 		Rental r3 = new Rental(m3,3);
+		Rental r4=new Rental(m4,6);
 		me.addRental(r1);
 		me.addRental(r2);
-		me2.addRental(r3);
+		me.addRental(r3);
+		//me2.addRental(r3);
+		me.addRental(r4);
 		System.out.println(me.statement());
 		System.out.println(me2.statement());
 

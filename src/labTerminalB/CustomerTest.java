@@ -9,6 +9,9 @@ public class CustomerTest {
 	Customer me2 = new Customer("Allah Ditta");
 	Rental r1 = new Rental(m1, 23);
 	Rental r2 = new Rental(m2,4);
+	Rental r3= new Rental(m1,0);
+	Rental r4=new Rental(m2,0);
+	
 	
 	/**
 	 * Test 1 Customer rented two movies one REGULAR and one NEW_RELEASE
@@ -25,12 +28,19 @@ public class CustomerTest {
 		{
 			assert true;
 		}
+		
+	}
+	public void testDaysRented()
+	{
+	
 	}
 	/*
 	 * TODO 2			10 Marks
 	 * Provide at least two more test cases carefully chosen so that they satisfy our testing
 	 * strategy basics i.e. input partition etc
 	 */
-	
+	/*
+	 * A New Class has been made for my testcases names CustomerTest2.  Kindly consider it.
+	 */
 
 }
